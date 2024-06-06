@@ -18,6 +18,7 @@ class SettingsViewController: UIViewController {
         self.title = "Settings"
         settingsTable.dataSource = self
         settingsTable.delegate = self
+        settingsTable.backgroundColor = UIColor(red: 242/255, green: 242/255, blue: 247/255, alpha: 1)
 
         settings = [
             Settings(title: "Screen Time", image: "timer"),
@@ -35,8 +36,6 @@ class SettingsViewController: UIViewController {
             Settings(title: "Siri & Search", image: "sparkle.magnifyingglass"),
             Settings(title: "Photos", image: "photo.on.rectangle.angled")
         ]
-        
-        settingsTable.backgroundColor = UIColor(red: 242/255, green: 242/255, blue: 247/255, alpha: 1)
     }
 }
 
