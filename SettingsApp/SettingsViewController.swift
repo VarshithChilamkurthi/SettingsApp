@@ -44,8 +44,10 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
         return 4
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return " "
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = .clear
+        return backgroundView
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
